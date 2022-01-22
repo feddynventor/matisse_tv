@@ -1,0 +1,25 @@
+div.container {
+  width: 95vw;
+  overflow-x: scroll;
+  display: table;
+  white-space: nowrap;
+}
+thead th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+}
+tbody th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+}
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+  border-right: solid 2px #f00;
+}
+.epg-th{padding:20px 7px; font-size:15px; color:#444; background:#66C2E0;}
+.epg-td{padding:5px 10px; height:35px;}
+.epg-td-program {padding:5px 10px; height:35px; opacity:100%;}
+.epg-td-program:hover {padding:5px 10px; height:35px; background-color: green; color: white; opacity: 80%; transition:opacity 0.5s}
